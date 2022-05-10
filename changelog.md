@@ -40,10 +40,46 @@ Changelog template:
             <lines lenth> cutted down to 72 characters maximun;
                 # Disagreement with the standards
     coded_in_phone/fizzbuzz.py
-        >> file ceassed
+        >> file ceased
                 # Lack of code to be issued
     coded_in_phone/n.py
         >> file ceased
                 # Scripts intentios where duplicate of                \
                 "coded_in_phone/aquiles_race.py".
+<10/05/22>
+    coded_in_phone/questao_1_al2.py:
+        >> file commented and issued
+            <recent comment> added explaining the intention;
+            <variable names> changed to something more suitable;
+            <lines lenth> cutted down to 72 characters maximun;
+            <import> fixed up.
+                # Disagreement with the standards
+    coded_in_phone/questao_2_al2.py:
+        >> file commented and issued
+            <original comment> fixxed up;
+            <variable names> changed to something more suitable;
+            <lines lenth> cutted down to 72 characters maximun;
+            <import> fixed up.
+                # Disagreement with the standards
+    coded_in_phone/ramanujan_rouses.py:
+        >> file ceased
+                # Lack of code to be issued
+    coded_in_phone/randint_test_odds.py:
+        >> file commented and issued
+            <recent comment> added explaining the intention;
+            <variable names> changed to something more suitable;
+            <lines lenth> cutted down to 72 characters maximun;
+            <import> fixed up.
+                # Disagreement with the standards
+    coded_in_phone/sudoku.py:
+        >> file commented
+            <recent comment> added explaining the intention;
+        >> file moved to work_in_progress folder, but someday it will.
+                # File is not working as intended, 
+    coded_in_phone/teste_raisa.py
+        >> file commented and issued
+            <recent comment> added explaining the intention;
+            <variable names> changed to something more suitable;
+            <while verifier> updated
+                # Disagreement with the standards
     
