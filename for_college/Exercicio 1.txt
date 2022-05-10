@@ -1,0 +1,14 @@
+print('Organizador de números')
+x=int(input("Entre com um valor:"))
+z=x%3
+if(x==1,2):
+	y=x**3
+	print("O cubo de",x,"é",y)
+elif(z==0):
+	print("Multiplo de três.")
+elif(x==4,5,7,8):
+	xx=x/9
+	print(x,"dividido por 9 é:",xx)
+else:
+	print("Valor Inválido")
+

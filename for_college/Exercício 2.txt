@@ -1,0 +1,11 @@
+x=int(input())
+if (x<0):
+    y=x*(-1)
+    print("O modulo de",x,"é",y)
+elif (x>10):
+    y=int(input("Entre um segundo valor"))
+    z=x-y
+    print("A diferença de",y,"para",x,"é",z)
+else:
+    y=x/5
+    print(y)
