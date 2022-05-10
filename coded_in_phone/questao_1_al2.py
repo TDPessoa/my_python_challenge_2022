@@ -1,22 +1,33 @@
-import random
+'''
+Comentário Recente:
+    Este script foi um teste de vetores e das funções min() e max().
+'''
 
+from random import randint as rint
 random.seed(2)
 
-vet_x, tam, x_min, x_max = [], 20, - 5, 30
+# Declarando variáveis
+vector, vector_lenth, num_min, num_max = [], 20, 0,  100
 
-for c in range ( tam ) :
-    num = random.randint( x_min , x_max )
-    vet_x.append( num )
+# Laço de repetição para criar o vetor
+for count in range(vector_lenth):
+    num = rint(num_min, num_max)
+    vector.append(num)
     
-print (vet_x) 
-
+print (vector) 
+# Separador de Informações
 print('-' *30) 
 
-x = max(vet_x)
-y = min(vet_x) 
+# Declarando Variáveis de leitura
+higher = max(vector)
+lower = min(vector) 
 
-for c in range ( tam ) :
-    if ( vet_x[c] == x ) :
-        print('Na ', c + 1, 'ª posição encontramos o valor máximo',x)
-    elif (vet_x[c] == y ) :
-        print('Na ', c + 1, 'ª posição encontramos o valor mínimo', y) 
+# Laço de repetição para leitura e output do maior e do menor valor \
+# contido no vetor.
+for count in range (vector_lenth):
+    if (vector[count] == higher):
+        print('Na ', count + 1, 'ª posição encontramos o maior \
+               valor', higher)
+    elif (vector[count] == lower):
+        print('Na ', count + 1, 'ª posição encontramos o valor \
+            mínimo', lower)

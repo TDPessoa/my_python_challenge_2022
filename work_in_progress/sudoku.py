@@ -1,3 +1,14 @@
+'''
+Comentário Recente:
+    Este script foi uma tentativa de desenvolver um gerador aleatório \
+    e um verificador de quadros de sudoku para um dia ser um jogo de \
+    fato.
+    Desenvolver esse script é uma vontade que estava além do meu \
+    conhecimento e continua até hoje, quabrei a cabeça de mais para \
+    fazer funcionar, mas os bugs sempre apareciam diferentes, até que \
+    eu desisti... Por ora.
+'''
+
 import random
 
 def sudokuprint():

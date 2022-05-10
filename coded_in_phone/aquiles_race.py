@@ -1,5 +1,5 @@
 '''
-Comentário:
+Comentário Recente:
     Este script foi elaborado para testar se o infinito imaginário    \
     das casas decimais dos números reais se aplica à lógica da        \
     programação.
