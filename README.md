@@ -1,37 +1,13 @@
-"""
 # Desafio Python 2022
+Eu me desafiei a coletar todos os scripts que escrevi desde 2019, para organizar e atualizar, documentando o processo no GitHub.
+### Um pouco sobre mim e minha vida com python
+Descobri Python pela minha faculdade de SI e gostei muito dos primeiros passos com algorítimos, há aproximadamente dois anos e meio que experiencio programação, não participei em nenhum projeto ou possuo qualquer experiencia com algo remotamente proximo de um. -- O maior script que já escrevi até o dado momento foi de 140 linhas e mesmo assim, metade dele era de comentários. -- **PORÉM**, sempre fui curioso e sempre tive idéias para testar, aprimorar, fazer de formas diferentes e nunca tive medo de insistir até me saciar ou fritar meus neurônios e precisar me afastar do código e voltar alguns dias depois para sofrer mais.
 
-    Eu me desafiei a coletar todos os scripts que escrevi desde 2019, \
-    para organizar e atualizar, documentando o processo no GitHub.
+> A ideia de fazer um programa com milhares de linhas de texto, pra mim, é algo dificil de imaginar, e confesso, que isso já me desmotivou. Entretanto, entender mesmo que seja um décimo de porcento do que é o mundo da programação fez com que eu desenvolvesse a aspiração de realizar uma pós em alguma área corelata a software(Engenharia de Software, quem sabe), então, programação é algo que eu não quero abrir mão **nunca**.
 
-    A pesar de ter praticamente três anos que escrevo em python, não  \
-    tive participação em nenhum projeto ou alguma experiencia com     \
-    algo remotamente proximo de um. 
-    O maior script que já escrevi até o dado momento foi de 140       \
-    linhas e mesmo assim, metade dele era de comentários.
+Ao longo desses dois anos, iniciei, conclui, desisti e perdi vários códigos das mais variadas formas, então me surgiu a ideia de fazer esse desafio. Irei me compelir a fazer melhor, colocar em prática meu meu conhecimento -- em Python, GitHub e Markdown -- e, ao mesmo tempo, criar um 'semi-portifólio" já que até momento, não tenho nenhum.
 
-    Descobri Python pela minha faculdade e gostei muito dos primeiros \
-    passos com algorítimos, realizei alguns cursos mas a ideia de     \
-    fazer um programa com milhares de linhas de texto ainda é algo    \
-    que mal posso ver em meu horizonte, confeço que isso me           \
-    desmotivou, porém, tenho aspirações em fazer pós em alguma área   \
-    corelata a software, então programação é algo que eu não quero    \
-    abrir mão nunca. Por isso surgiu a ideia de fazer esse desafio.
-    Irei me desafiar a fazer melhor, colocar em prática meu           \
-    meu conhecimento e, ao mesmo tempo, criar um 'semi-portifólio"    \
-    já que no momento não tenho nenhum.
-
-    Até mesmo neste README.md, irei "estruturar" em algo parecido com \
-    py e tentar ser o mais próximo do que entendo das boas práticas   \
-    para qualquer coisa dentro deste repositório. 
-
-    Dentro de changelog.md irei documentar todas as modificações que  \
-    fiz em cada arquivo. 
-"""
-
-def mini_objetivos():
-    mini_obj_001 = "Encontrar e organizar todos os arquivos .py"
-    concl_mn_obj_001 = "06/05/2022"
-
-    mini_obj_002 = "alterações pasta /coded_in_phone"
-    concl_mn_obj_002 = False
+Dentro de *'/changelog.md'* irei documentar, para cada data, todas as modificações que fiz em cada arquivo. 
+E farei também as versôes em inglês:
+- *'/README_en-us.md'* e
+- *'/changelog_en-us.md'*

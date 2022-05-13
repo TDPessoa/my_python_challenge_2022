@@ -35,4 +35,3 @@ while (passo_aquilles < 2):
 # Impressão de informações relevantes
 print('Quantidade de paradas =', paradas )
 print('Valor final do divisor =', passo_tartaruga)
-
