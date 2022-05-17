@@ -1,5 +1,4 @@
-'''
-Comentário Recente:
+'''Comentário Recente:
     Este script foi elaborado para testar se o infinito imaginário    \
     das casas decimais dos números reais se aplica à lógica da        \
     programação.
@@ -19,9 +18,7 @@ Comentário Recente:
     irá percorrer metade do que falta para a linha de chegada, daí 1  \
     na primeira, 1/2 na segunda, 1/4 na terceira... ou melhor, sempre 
     multiplicando por 2 o divisor do valor a ser adicionado a conta. 
-    A cada vez que Aquilles para, é adicionado 1 a "paradas".
-
-'''
+    A cada vez que Aquilles para, é adicionado 1 a "paradas".'''
 
 # Declarando variáveis
 passo_aquilles, passo_tartaruga, paradas = 0, 1, 0

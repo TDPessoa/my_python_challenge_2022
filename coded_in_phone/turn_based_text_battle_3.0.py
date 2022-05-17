@@ -1,85 +1,92 @@
-'''
-Comentário Recente:
-    Este é um script que sugriu com meus colegas e faculdade nos \
-    primeiros contatos com python, queriamos criar um joguinho de \
-    texto turn-based e ajudou bastante a desenvolver minhas praticas \
-    e aprimorar minha abordagem nos codigos.
-    Como ele não está operacional no momento, irei tentar concluir e \
-    deixar os defs de acordo, mas tenho certeza que ele está melhor em \
-    outra pasta do diretório, se não estiver, irei move-lo para a WIP.
-'''
+"""Comentário Recente:
+Este é um script que sugriu com meus colegas e faculdade nos \
+primeiros contatos com python, queriamos criar um joguinho de \
+texto turn-based e ajudou bastante a desenvolver minhas praticas \
+e aprimorar minha abordagem nos codigos.
+Como ele não está operacional no momento, irei tentar concluir e \
+deixar os defs de acordo, mas tenho certeza que ele está melhor em \
+outra pasta do diretório, se não estiver, irei move-lo para a WIP."""
+
 # Imports necessários:
 from random import randint as rint
 
 # Declarando variáveis globais:
 hero_hp, enemy_hp = 100, 100
 
-# Defs
-    # Turnos:
+
+# Função que irá operar os turnos
 def turn():
-    while True::
-        act = int(input('Qual é a sua ação?\nA - Atacar\nB - Bloquear\n' + '-'*20))
-        enemy_turn = rint(0, 1)
-        
-        if (act == 'A' or act == 'a') and (enemy_turn == 1):
-            block = rint(0, 5)
+    global hero_hp
+    print(('-' * 20) + f'\nSua vida = {hero_hp}\nVida do inimigo = {enemy_hp}')
+    act = str(input('Qual é a sua ação?\n\tA - Atacar\n\tB - Bloquear\n' + ('-' * 20) + '\n'))
+    enemy_turn = rint(0, 1)
 
-            if (block < 1):
-                damage = 5 + rint(0, 6)
-                print(f'O inimigo tentou levantar seu escudo, mas não conseguiu, você desfere um dano critico de {damage}')
-                break
+    if act == 'A':
+        attack(enemy_turn)
 
-            else:    
-                damage = 5 + rint(0, 3) - block
-                enemy_hp -= damage
-                print(f'O inimigo levanta o escudo em fações de segundo, você causou {damage} de dano.')
-                break
+    elif act == 'B':
+        defense(enemy_turn)
 
-        elif (act == 'A' or act == 'a') and (enemy_turn == 0):
-            parry_hero = rint(0, 100)
-            parry_enemy = rint(0, 100)
-            
-            if (parry_hero > parry_enemy):
-                damage = 5 + rint(0, 5)
-                enemy_hp -= damage
-                
-            
-            break
+    else:
+        hero_hp -= 5
+        print(f'Você se atrapalha entre tantas ações, tropeça e perde 5 pontos de vida.')
 
-        elif (act == 'B' or act == 'b'):
-            block = rint(0, 5)
-            if (block < 1):
-                print('Você tenta levantar seu escudo, mas não consegue')
-            else:
-                hero_defense = True
-                print('Você levanta seu escudo frações de segundo antes do inimigo começar a se mover.')
-            break
+
+def attack(n):
+    global hero_hp, enemy_hp
+    hero_atk, enemy_atk = (5 + rint(0, 5)), (5 + rint(0, 5))
+    if n == 0:
+        print('Você e o inimigo avançam ao mesmo instante.')
+
+        if hero_atk > enemy_atk:
+            enemy_hp -= hero_atk
+            print(f'Porém, você foi mais rápido, o inimigo perde {hero_atk} de vida.')
+
+        elif hero_atk < enemy_atk:
+            hero_hp -= enemy_atk
+            print(f'Porém, o inimigo foi mais rápido, você perde {enemy_atk} de vida.')
 
         else:
-            print('Você se atrapalhou nas várias escolhas disponíveis...')
-            break
+            print(f'Porém, uma arma apara a outra, ninguém se feriu.')
+
+    else:
+        enemy_def = rint(0, 5)
+        print('O inimigo começa a levantar o escudo frações de segundo antes de você atacar.')
+
+        if enemy_def == 0:
+            enemy_hp -= hero_atk
+            print(f'Ele não consegue levantar a tempo e recebe {hero_atk} de dano a vida.')
+
+        else:
+            enemy_hp -= (hero_atk - enemy_def)
+            print(
+                f'Sua arma é bloqueada pelo escudo do inimigo mas, ainda assim, causa {hero_atk - enemy_def} de dano.')
 
 
-    # Ações >> Retirado 
+def defense(n):
+    global hero_hp
+    hero_def, enemy_atk = rint(0, 5), (5 + rint(0, 5))
+    if n == 0:
+        if hero_def == 0:
+            hero_hp -= enemy_atk
+            print(f'Você tenta levantar seu escudo, mas falha, recebendo {enemy_atk} de dano.')
+        else:
+            hero_hp -= (enemy_atk - hero_def)
+            print(f'Você levantou seu escudo, mas recebeu {enemy_atk - hero_def} de dano.')
 
-    # Feitiços >> retirado
-   
-    # Elites >> retirado
+    else:
+        print('Ambos levantaram o escudo, que embaraoso...')
 
-
-# Cinco inimigos e um elite >> Retirado
 
 while True:
     turn()
 
-    if (hero_hp <= 0):
+    if hero_hp <= 0:
         print('Você morreu.')
         break
 
-    elif (enemy_hp <= 0):
+    elif enemy_hp <= 0:
         print('Parabens! Você derrotou o inimigo!')
         break
-
-    hero_turn = not hero_turn
 
 print('Obrigado por jogar.')

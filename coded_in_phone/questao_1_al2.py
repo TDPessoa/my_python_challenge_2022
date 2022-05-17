@@ -1,7 +1,5 @@
-'''
-Comentário Recente:
-    Este script foi um teste de vetores e das funções min() e max().
-'''
+'''Comentário Recente:
+    Este script foi um teste de vetores e das funções min() e max().'''
 
 from random import seed, randint as rint
 seed(5)
@@ -22,7 +20,8 @@ print('-' *30)
 higher = max(vector)
 lower = min(vector) 
 
-# Laço de repetição para leitura e output do maior e do menor valor contido no vetor.
+# Laço de repetição para leitura e output do maior e do menor valor \
+# contido no vetor.
 for count in range (vector_lenth):
     if (vector[count] == higher):
         print('Na ', count + 1, 'ª posição encontramos o maior valor', higher)

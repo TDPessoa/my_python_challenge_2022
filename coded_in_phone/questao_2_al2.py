@@ -1,10 +1,10 @@
-'''
-Comentário original:
-    Dada uma matriz 8x8 de números inteiros, efetuar as seguintes operações:
+'''Comentário original:
+    Dada uma matriz 8x8 de números inteiros, efetuar as seguintes \
+    operações:
     a) Apresentar a quantidade de números primos existentes na matriz;
-    b) Comparar o somatório dos números pares da diagonal principal com o somatório dos números ímpares da coluna 2 e \
-    informar se é maior, menor ou igual.
-'''
+    b) Comparar o somatório dos números pares da diagonal principal \
+    com o somatório dos números ímpares da coluna 2 e \
+    informar se é maior, menor ou igual.'''
 
 from random import seed, randint as rint
 seed(2)
@@ -80,10 +80,13 @@ print( 'A matriz possui', prime_count , 'números primos.')
 
     # Verificadores para adequar a mensagem de saída ao resultado
 if (main_diag_evens_sum > sec_coll_odds_sum) :
-    print('A soma dos números pares da diagonal principal é maior que a soma dos impares da 2ª coluna.')
+    print('A soma dos números pares da diagonal principal é maior que a soma'\
+        + ' dos impares da 2ª coluna.')
 
 elif  (main_diag_evens_sum == sec_coll_odds_sum) :
-    print('A soma dos números pares da diagonal principal é igual a soma dos impares da 2ª coluna.')
+    print('A soma dos números pares da diagonal principal é igual a soma dos'\
+        + ' impares da 2ª coluna.')
 
 else :
-    print('A soma dos números pares da diagonal principal é menor que a soma dos impares da 2ª coluna.')
+    print('A soma dos números pares da diagonal principal é menor que a soma'\
+        + ' dos impares da 2ª coluna.')

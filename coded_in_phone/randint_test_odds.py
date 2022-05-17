@@ -1,5 +1,4 @@
-'''
-Comentário Original:
+'''Comentário Original:
     Odds test randint w/ count
 Comentário Recente:
     Este foi um script simple que desenvolvi para testar as precisões \
@@ -7,8 +6,7 @@ Comentário Recente:
     implementar um sistema de chances aleatórias em um programa, e \
     queria saber se utilizando um verificador, eu iria conseguir uma \
     seed específica que faria com que seus randints tivessem \
-    probabilidades iguais de serem "rolados".
-'''
+    probabilidades iguais de serem "rolados".'''
 
 from random import randint as rint
 
@@ -20,7 +18,7 @@ num_seed = 0
 
 # Serão feitas cem colétas dentro de cem seeds
 for count in range (0, 100):
-    for interal_count in range (0, 100):
+    for internal_count in range (0, 100):
         # A seed é declarada com 1 valor adicionado a cada coleta
         random.seed(num_seed) 
         num = rint(0, 4)

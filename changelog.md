@@ -78,7 +78,7 @@
 - Comentários adicionados; e
     \# Comentário recente adicionado explicando o objetivo do código.
 - Código irá para *'/work_in_progress'*.
-    \# Como este é um código que me desperta interesse para ver concluído e se tornou uma evidencia de que eu não entendia lógica de programação na época, irei dar continuidade após este projeto.
+    # Como este é um código que me desperta interesse para ver concluído e se tornou uma evidencia de que eu não entendia lógica de programação na época, irei dar continuidade após este projeto.
 ### *'coded_in_phone/teste_raisa.py'*
 - Comentários adicionados e código modificado:
     \# Em desacordo com os padrões.
@@ -96,10 +96,43 @@
     \## Além do fato de que eu estava editando esses arquivos em texto plano, mas com o Sublime, o que só muda o texto em relação à sintaxe e estava utilizando essas mudanças para definir como eu achava mais agradável... quando visto em um interpretador markdown o resultado era horrendo. Portanto, novos parâmetros.
 ---
 Um novo começo:
-## **12 de maio de 2022**
+## **13 de maio de 2022**
 ### *'coded_in_phone/factorial_binary.py'*
 - Comentários organizados e Comentário Extra adicionado
     \# Quando eu fiz a primeira alteração, estruturei de forma errada.
     \## Também coloquei um novo comentário ratificando a alteração.
 - Novo *def()* criado
     \# Função para converter decimal para binário, já que a função *built-in* gerava um resultado que não me agradava.
+- Novos comentários no código
+### *'coded_in_phone/questao_1_al2.py'
+- Importação corrigida 
+    \# Seed não estava sendo importada, porém estava sendo usada no código
+### *'coded_in_phone/questao_2_al2.py'
+- Importação corrigida
+    \# Seed não estava sendo importada, porém estava sendo usada no código
+- Quebras de linhas refeitos
+    \# Apresentava um problema em que os espaços na segunda linhas eram passados como caracteres, e não tinha visto essa possibilidade antes de testar.
+## **16 de maio de 2022**
+### *'coded_in_phone/turn_based_text_battle_3.0.py'*
+- Idéia base finalizada e funcionando
+    \# Sofri muito pois quis manter a implementação dos defs, e não conhecia a sintaxe *'global'*, o script é simples e repete ações básicas por um bom tempo, só dá pra perder por insistência.
+    \## Eu cheguei a fazer uma versão muito mais simples que essa, mas era muito mais facil perder. Provavelmente eu perdi, pois fiz em um dos computadores da faculdade.
+### *'exercises/1.py'*
+- Nome do arquivo alterado para *'reajuste_salarial.py'*
+- Comentários adicionados e código modificado:
+    \# Em desacordo com os padrões.
+    - Comentário recente adicionado explicando o objetivo do código;
+    - Nome das variáveis modificados para algo mais preciso;
+    - Linhas:
+        - De código cortadas em 79 caracteres;
+        - De comentários cortadas em 72 caracteres;
+### *'exercises/2.py'*
+- Nome do arquivo alterado para *'zeros_e_uns.py'*
+- Comentários adicionados e código modificado:
+    \# Em desacordo com os padrões.
+    - Comentário recente adicionado explicando o objetivo do código;
+    - Nome das variáveis modificados para algo mais preciso;
+    - Indexação corrigida.
+### *'exercises/Ex 1.py'*, *'exercises/Ex 2.py'* e *'exercises/Extra Ex2.py'*
+- Arquivos encerrados
+    \# Similares a *'reajuste_salarial.py'*(o 1º) e *'zeros_e_uns.py'*(os 2º e 3º).
