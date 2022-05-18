@@ -136,3 +136,6 @@ Um novo começo:
 ### *'exercises/Ex 1.py'*, *'exercises/Ex 2.py'* e *'exercises/Extra Ex2.py'*
 - Arquivos encerrados
     \# Similares a *'reajuste_salarial.py'*(o 1º) e *'zeros_e_uns.py'*(os 2º e 3º).
+## **17 de maio de 2022**
+### Projeto pausado
+- Iniciei um bootcamp, quando concluir, estarei de volta
